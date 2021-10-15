@@ -3,4 +3,4 @@
 
 Easy enough! But! What if I created a REST API that did FizzBuzz instead? Well, thats the goal of this repository. I will go *completely* overboard and build a **FizzBuzz REST API** powered by NestJs!
 
-[pc](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
+![pc](https://media.giphy.com/media/13HgwGsXF0aiGY/giphy.gif)
