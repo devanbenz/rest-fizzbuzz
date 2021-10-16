@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { createCountDto } from './createCountDto.dto';
 import { FizzbuzzService } from './fizzbuzz.service';
 
@@ -9,5 +9,9 @@ export class FizzbuzzController {
     @Post()
     fizzbuzz(@Body() countTo: createCountDto): Array<number | string> {
         return this.fizzbuzzSvc.fizzbuzz(countTo.counter)
+    }
+    @Get()
+    fizzbuzzUrl(@Query('counter') counter: number): Array<number | string> {
+        return this.fizzbuzzSvc.fizzbuzz(counter)
     }
 }
